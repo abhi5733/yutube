@@ -1,0 +1,247 @@
+#nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 2px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.nav-right{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+.nav-right>img{
+    width: 15%;
+    margin-right: 5%;
+        
+}
+.nav-right>img:last-child{
+    width: 15%;
+    border-radius: 50%;
+    
+}
+.nav-left{
+    display: flex;
+    width: 15%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.nav-left>img{
+    width: 25px;
+    margin-left: 2%;
+
+}
+.nav-left>img:last-child{
+    width: 50px;
+    margin-left: 5%;
+}
+.nav-middle{
+    width: 55%;
+    display: flex;
+}
+.nav-middle>input{
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.nav-middle>img{
+    /* border: 1px solid; */
+    height: 10%;
+    padding: 2px 10px;
+    margin-top: 10px;
+    background-color: lightgray;
+}
+.nav-middle>img:last-child{
+    /* border: none; */
+    margin-left: 3%;
+    height: 40px;
+    margin-top: 1px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    
+}
+
+#container{
+    width: 80%;
+    height: 00px;
+    /* border: 1px solid; */
+    gap: 3%;
+    
+    /* border: 1px solid; */
+    padding: 2%;
+    margin-left: 15%;
+}
+#container>iframe{
+    /* border: 1px solid; */
+    height: 500px;
+    width: 100%;
+}
+
+#sidebar{
+    display: flex;
+    /* position: fixed; */
+}
+.side{
+    position: fixed;
+    /* flex: 1; */
+    /* border: 1px solid; */
+    background: white;
+    /* margin-top: 10px; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 14%;
+    
+}
+
+.side a {
+    display: flex; 
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 5%;
+    /* border: 1px solid; */
+}
+.side img{
+ /* border: 1px solid; */
+ margin-left: 3%;
+ height: 10%;
+ width: 30%;
+ 
+}
+
+.side p{
+    margin-left: 1%;
+    color: black;
+    font-size: 10px;
+}
+.side a:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+.nav-left>img:last-child{
+    width: 50%;
+    margin-left: 5%;
+}
+.nav-left>img:first-child{
+    width: 10%;
+    height: 40%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.inner{
+    display: flex;
+
+}
+.inner>button{
+  background-color: black;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 30%;
+  height: 40px;
+  width: 90px;
+  color:white ;
+}
+
+.inner1{
+    display: flex;
+    margin-left: 40%;
+}
+.inner1>i{
+    font-size: 30px;
+    
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+
+
+@media all and (min-width:481px) and (max-width:768px) {
+
+    #container>iframe{
+        /* border: 1px solid; */
+        height: 300px;
+        width: 100%;
+    }
+
+    
+    .nav-middle>img:last-child{
+    
+        margin-top: 3%;
+         
+         
+     }
+
+     .nav-left>img:first-child{
+        width: 15%;
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+ 
+     .inner1{
+        display: flex;
+        margin-left: 25%;
+    }
+     
+ 
+     .side img{
+         /* border: 1px solid; */
+         margin-left: 3%;
+         height: 50%;
+         
+        }
+ 
+        #container{
+         
+         grid-template-columns: repeat(3,1fr);
+         
+     }
+ 
+     .side a p{
+         margin-left: 1%;
+         color: black;
+         font-size: 10px;
+         
+     }
+}
+
+@media all and (min-width:320px) and (max-width:480px){
+
+    #container>iframe{
+        /* border: 1px solid; */
+        height: 200px;
+        width: 100%;
+    }
+
+    .inner1{
+        display: flex;
+        margin-left: 1%;
+    }
+
+
+    .nav-left{
+        display: flex;
+        width: 35%;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    .nav-left>img:first-child{
+        width: 15%;
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+    .nav-middle>img:last-child{
+        /* border: none; */
+        margin-left: 3%;
+        height: 20px;
+        margin-top: 10px;
+        border-radius: 50%;
+        background-color: lightgrey;
+        
+    }
+    
+}
